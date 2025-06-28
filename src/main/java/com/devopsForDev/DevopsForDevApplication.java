@@ -1,11 +1,13 @@
-package com.example.devopsForDev;
+package com.devopsForDev;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@RestController  // ← ADD THIS LINE
 public class DevopsForDevApplication {
 	@GetMapping("/greetings/{name}")
 	public String greetings(@PathVariable String name) {
