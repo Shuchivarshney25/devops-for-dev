@@ -15,7 +15,7 @@ class DevopsForDevApplicationTests {
 
 	@Test
 	public void testGreetingsEndpoint() throws Exception {
-		String name = "Shuchi";
+		String nam = "Shuchi";
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}", name))
 				.andExpect(MockMvcResultMatchers.status().isOk())
